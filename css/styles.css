@@ -174,7 +174,7 @@ a {
 .hero-section {
   background-color: var(--bcg-section-color);
   text-align: center;
-  padding: 200px;
+  padding: 200px 0 200px 0;
 }
 
 .hero-text {
@@ -231,7 +231,9 @@ button.order {
   background-color: #ffffff;
 }
 /* Features */
-
+.features {
+  padding-bottom: 0;
+}
 .features-list {
   display: flex;
 
@@ -256,6 +258,7 @@ button.order {
 }
 
 /* Our duties */
+
 .duties-title {
   color: var(--title-text-color);
   font-weight: bold;
@@ -330,6 +333,8 @@ button.order {
 /* Footer */
 footer {
   background-color: var(--bcg-section-color);
+
+  padding: 60px 60px;
 }
 
 .footer-logo {
@@ -337,10 +342,10 @@ footer {
   font-family: Raleway, sans-serif;
   color: #ffffff;
   font-weight: bold;
+
   font-size: 26px;
   line-height: 1.19;
-
-  padding: 60px 0 20px 0;
+  margin-bottom: 20px;
 }
 .footer-logo:hover,
 .footer-logo:active,
@@ -348,22 +353,23 @@ footer {
   color: var(--accent-color);
 }
 
-.footer-contacts {
-  padding: 0;
+.footer-contacts .contacts-item {
+  display: block;
+  margin-bottom: 9px;
+}
+.footer-contacts .contacts-item:last-child {
+  margin-bottom: 0px;
 }
 .footer-contacts .geoposition {
   color: #ffffff;
   font-style: normal;
-  padding-bottom: 9px;
 }
 
 .footer-email {
   display: inline-block;
-  padding-bottom: 9px;
 }
 .footer-phone {
   display: inline-block;
-  padding-bottom: 60px;
 }
 .geoposition:hover,
 .geoposition:active,
@@ -390,8 +396,8 @@ footer {
 }
 
 /* Main portfolio */
-.main-portfolio {
-}
+/* .main-portfolio {
+} */
 /* Portfoio buttons */
 .buttons-section {
   display: flex;
@@ -435,15 +441,20 @@ footer {
   margin-right: 30px;
   margin-bottom: 30px;
 }
+
+/* -------BORDER PORTFOLIO-------- */
 .border {
   background: #ffffff;
   border: 1px solid #eeeeee;
   box-sizing: border-box;
+
+  padding: 20px 24px;
 }
-/* -------BORDER PORTFOLIO-------- */
+
 .border {
   border-top: none;
 }
+
 .portfolio-item:nth-child(3n) {
   margin-right: 0;
 }
@@ -467,12 +478,9 @@ footer {
   line-height: 2;
   letter-spacing: 0.06em;
 
-  margin: 0;
-  padding: 20px 24px 4px 24px;
+  margin: 0 0 4px;
 }
 .portfolio-photos .photo-text {
   font-size: 16px;
   line-height: 1.87;
-
-  padding: 0 24px 20px 24px;
 }
