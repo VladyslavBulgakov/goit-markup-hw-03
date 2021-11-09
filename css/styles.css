@@ -480,13 +480,3 @@ footer {
 }
 
 /* Testing */
-.pane {
-  display: none;
-  padding: 8px;
-  border: 1px solid blue;
-  border-radius: 3px;
-}
-
-.is-active {
-  display: block;
-}
